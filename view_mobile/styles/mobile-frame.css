@@ -1,0 +1,27 @@
+/* 모바일 프레임 */
+.mobile--frame {
+  
+    border-radius: 10px;
+    
+    width: 320px;
+    height: 600px;
+    border: 10px solid #000;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    /*left: 50%;
+    transform: translateX(-50%);*/
+/*    margin-top: 50px;*/
+    overflow-x: auto;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 
+                0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+.mobile--frame::-webkit-scrollbar {display: none !important;}
+

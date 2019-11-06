@@ -1,0 +1,553 @@
+*{margin: 0; padding: 0; border: 0;}
+ul,li{list-style: none;}
+a{text-decoration: none;}
+
+body{
+    font-family: 'Roboto', 'Gothic A1', sans-serif;
+}
+.center{
+    width:1280px;
+    margin: 0 auto;
+}
+/*------------------------------header-----------------------------*/
+header{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+header:hover .nav{
+    background-color: rgba(255,255,255,0.5);
+    transition: all 0.5s;
+    box-shadow: 3px 3px 10px rgba(0,0,0,.1);
+}
+.nav .center{
+    height: 100px;
+    position: relative;
+}
+.nav__logo{
+    position: absolute;
+    top:50%;
+    left: 10px;
+    margin-top: -34.5px;
+}
+.nav__main{
+    line-height: 100px;
+    text-align: center;
+}
+.nav__main--list{
+    display: inline-block;
+    padding: 0 48px;
+}
+.main__list--link{
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s;
+    /*font-family: 'Roboto', 'Noto Sans KR', sans-serif;*/
+    font-weight: bold;
+}
+header:hover .main__list--link{
+    color:#333;
+}
+.nav__sub{
+    position: absolute;
+    top:50%;
+    right: 20px;
+    margin-top: -13px;
+}
+.nav__sub--list{
+    display: inline-block;
+    padding-left: 10px;
+}
+.sub__list--link{
+    color: #fff;
+    transition: all .5s;
+}
+.sub__list--link .material-icons{
+    font-size: 24px;
+}
+header:hover .sub__list--link{
+    color: #333;
+}
+
+/*------------banner--------------*/
+.banner{position: relative;}
+.banner__link{
+    
+    display: block;
+    height: 599px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.arrow--prev,
+.arrow--next{
+    display: inline-block;
+    width: 56px;
+    height: 56px;
+    background-color: rgba(0,0,0,.2);
+    
+    position: absolute;
+    top: 50%;
+    margin-top: -28px;
+    
+    text-align: center;
+}
+.arrow--prev{
+    left: 20px;
+}
+.arrow--next{
+    right: 20px;
+}
+.arrow--prev .material-icons,
+.arrow--next .material-icons{
+    font-size: 40px;
+    line-height: normal;
+    color: #fff;
+}
+.arrow--prev:focus,
+.arrow--next:focus{
+    outline: none;
+}
+
+.swiper-pagination{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+.swiper-pagination-bullet{
+    margin: 0 4px;
+}
+
+
+/*--------------section__title----------------*/
+.section__title--main{
+    color: #212121;
+    font-size: 32px;
+    font-weight: bold;
+    /*font-family: 'Roboto', 'Noto Sans KR', sans-serif;*/
+}
+.section__title--sub{
+    padding-top: 10px;
+    font-size: 16px;
+    color: #767676;
+    font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+}
+/*------------------------------leicaServices-----------------------------*/
+.leicaServices{border-bottom: 1px solid #d4d4d4;} 
+.leicaServices .center{
+    height: 180px;
+}
+.leicaServices__img{
+    text-align: center;
+}
+.leicaServices__img li{
+    display: inline-block;
+   margin: 24px 74px;
+}
+.leicaServices__img .list__text{
+    display: block;
+    font-size: 14px;
+    color:#212121;
+    padding-top: 14px;
+}
+.services__img{
+    position: absolute;
+}
+.services__img--hover{
+    opacity: 0;
+    transition: all .3s;
+}
+.leicaServices__img li:hover .services__img--hover{
+    opacity: 1;
+}
+.leicaServices__img li:hover .services__img{
+    opacity: 0;
+}
+
+/*----------------------------------leicaItem--------------------------------*/
+.leicaItem .center::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.leicaItem .section__title{
+    margin-top: 140px;
+    text-align: center;
+}
+.leicaItem .section__title--sub{
+    padding-bottom: 100px;
+}
+.leicaItem .section__title--sub li{
+    height: 30px;
+    display: inline-block;
+    margin: 0 25px;
+    padding: 0 5px;
+    color:#767676;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+.leicaItem .section__title--sub li:hover{
+    color:#212121;
+    border-bottom: 2px solid #ec202a;
+}
+.leicaItem__product--left{
+    width:50%;
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+}
+.product--list{
+    display: inline-block;
+    text-align: center;
+    padding: 20px 44px 30px;
+    margin-top: 10px;
+    font-size: 18px;
+}
+.product--list:hover{
+    box-shadow: 1px 1px 6px rgba(0,0,0,.2); 
+    transition: all 0.2s;
+}
+.product--list a{
+    color: #212121;
+}
+.product__title{
+    padding: 30px 0 15px 0;
+    letter-spacing: -0.8px;
+}
+.product__price{
+    display: inline-block;
+/*    letter-spacing: -0.5px;*/
+}
+
+.leicaItem__product--right{
+    padding: 0 20px;
+    width: 50%;
+    height: 550px;
+    float: right;
+    box-sizing: border-box;
+    
+    background-image: url(images/product_img.gif);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    
+}
+.product__content--title{
+    font-weight: bold;
+    font-size: 32px;
+    letter-spacing: -0.5px;
+    line-height: 35px; /*em으로 바꿀것*/
+}.product__content--title span{
+    color: #ec202a;
+}
+.product__content--text{
+    font-size: 14px;
+    color: #767676;
+    padding: 25px 0;
+    line-height: 28px;/*em으로 바꿀것*/
+}
+.product__content--btn{
+    font-size: 14px;
+    color: #212121;
+    font-weight: bold;
+} 
+.product__content--img{
+    margin-top: -30px;
+    padding-left: 100px;
+}
+
+
+/*----------------------------------leicaMagazine--------------------------------*/
+.leicaMagazine{
+    margin-top: 200px;
+    padding:180px 0 100px 0;
+    position: relative;
+/*    border: 3px solid black;*/
+    
+    height: 255px;
+    min-width: 1280px;
+    background-image: url(images/redBox2.png);
+    background-repeat: no-repeat;
+    background-position: 0px 230px;
+}
+.leicaMagazine .center::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.leicaMagazine .section__title{
+    position: absolute;
+    top: 0;
+    left: -50px;
+}
+.section__title--main{
+    display: inline-block;
+    position: relative;
+    top: -12px; 
+    left: 10px;
+    font-size: 40px;
+}
+.leicaMagazine__content--left{
+    width:30%;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+}
+.leicaMagazine__content--left h3{
+    font-size: 28px;
+    font-weight: bold;
+}.leicaMagazine__content--left p{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    padding: 50px 0;
+}
+.magazine__btn{
+    display: inline-block;
+    width:120px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #000;
+    font-size: 12px;
+    font-weight: bold;
+    color: #000;
+}
+.magazine__btn:last-child{
+    background-color: black;
+    color: #fff;
+}
+.leicaMagazine__content--right{
+    width:70%;
+    box-sizing: border-box;
+    /*border: 3px solid blue;*/
+    float: right;
+    padding:20px 0 0 60px;
+}
+.content__img--wrap{
+    width:900px;
+    /*overflow: hidden;*/
+    /*border: 3px solid green;*/
+}
+.content__img--wrap ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+/*----------------------------------leicaIssue--------------------------------*/
+.leicaIssue{
+    margin-top: 180px;
+}
+.leicaIssue__1st{
+    padding-right: 20px;
+}
+.leicaIssue__1st::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.leicaIssue__1st img{
+    float: left;
+    padding-right: 40px;
+}
+.leicaIssue__2nd{
+    margin-top: 40px;
+    padding-left: 20px;
+}
+.leicaIssue__2nd::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.leicaIssue__2nd img{
+    float: right;
+    padding-left: 40px;
+}
+.issue__title{
+    text-align: center;
+    font-size: 38px;
+}
+.issue__title--bold{
+    padding-right: 180px;
+}
+.issue__title--light{
+    padding-left: 180px;
+    font-weight: 500;
+}
+.issue__text{
+    padding: 35px 0 20px 0;
+    font-size: 14px;
+    color: #767676;
+    line-height: 28px;
+}
+.issue__btn{
+    font-size: 14px;
+    font-weight: 600;
+    color: #212121;
+    float: right;
+}
+
+.issue__content::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/*----------------------------------storeGarllery--------------------------------*/
+.storeGarllery{
+    padding: 180px 0 0 20px;
+}
+.storeGarllery .center::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+/*-------------------store------------------*/
+.leicaStore{
+    width:50%;
+    float:left;
+}
+.store{
+    width: 300px;
+    height: 200px;
+}
+.leicaStore .section__title{
+    text-align: center;
+}
+.leicaStore__top{
+    padding: 80px 0 10px 0;
+}
+.leicaStore__location--wrap{
+    /*border: 3px solid red;*/
+    width:500px;
+    padding: 20px 0;
+}
+.leicaStore__location{
+    display:inline-block;
+    width:240px;
+    height: 40px;
+    font-size: 16px;
+    line-height:40px;
+    cursor: pointer;
+}
+
+.location__icon{
+    display: none;
+    position: relative;
+    top: 3px;
+    /*vertical-align: middle;*/
+}
+.leicaStore__location.icon::after{
+    content: "";
+    width: 12px;
+    height: 18px;
+    display: inline-block;
+    background-image: url(location.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 0 -3px 6px;
+}
+.icon{
+    font-weight: bold;
+}
+.leicaStore__top ul li:hover{
+    font-weight: bold;
+}
+.store__info{
+    float: right;
+    padding: 5px 30px 0 0;
+}
+.store__info--text{
+    padding: 4px 0 10px 0;
+}
+
+/*-------------------gallery------------------*/
+.leicaGallery{
+    width:50%; 
+    float: right;
+    text-align: center; 
+/*    box-sizing: border-box; 
+    border: 3px solid yellow;*/
+}
+.gallery{
+    width:520px;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+.gallery li{
+    display: inline-block;
+}
+.gallery li a{
+    display: block;
+    width: 123px;
+    height: 123px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.gallery li img{
+    width: 123px;
+}
+
+/*----------------------------------footer--------------------------------*/
+.footer{
+    background-color: #161616;
+    height: 388px;
+    margin-top: 180px;
+}
+.footer__col--wrap{
+    width:990px;
+    margin: 0 auto;
+}
+.footer__col{
+    display: inline-block;
+    vertical-align: top;
+    padding: 32px 75px;
+}
+.footer__col--title{
+    font-size: 18px;
+    display: block;
+    padding: 8px 0;
+    color:#fff;
+}
+.footer__col ul li{
+    padding: 3px 0;
+}
+.footer__col ul li a{
+    font-size: 14px;
+    font-weight: 200;
+}
+.footer__col a{
+    color: #fff;
+}
+.sns_icon{
+    display: inline-block;
+    margin-right: 15px;
+}
+.footer__bottom{
+    border-top: 1px solid #5c5c5c;
+    padding-top: 5px;
+}
+.footer__bottom .center::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+address{
+    font-style: normal;
+    font-size: 12px;
+    color: #fff;
+    float: left;
+    padding: 20px 0;
+    line-height: 22px;
+}
+.footer__bottom span{
+    float:right;
+    color: #fff;
+    font-size: 12px;
+    padding-top: 40px;
+}
+
+
