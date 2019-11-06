@@ -263,14 +263,8 @@ header:hover .sub__list--link{
     margin-top: 200px;
     padding:180px 0 100px 0;
     position: relative;
-/*    border: 3px solid black;*/
-    
-    height: 255px;
-    min-width: 1280px;
-    background-image: url(images/redBox2.png);
-    background-repeat: no-repeat;
-    background-position: 0px 230px;
 }
+
 .leicaMagazine .center::after{
     content: "";
     display: block;
@@ -325,13 +319,15 @@ header:hover .sub__list--link{
     padding:20px 0 0 60px;
 }
 .content__img--wrap{
-    width:900px;
+    width: 1200px;
+    background-color: #ED1C24;
     /*overflow: hidden;*/
     /*border: 3px solid green;*/
 }
 .content__img--wrap ul li{
     display: inline-block;
-    padding: 0 15px;
+    padding: 10px 15px 5px;
+    margin-top: -25px;
 }
 
 /*----------------------------------leicaIssue--------------------------------*/

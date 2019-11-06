@@ -18,7 +18,6 @@ $(function(){
     });
     var swiper2 = new Swiper('.weeklyBest__right', {
         slidesPerView: 4,
-/*        spaceBetween: 45,*/
         slidesPerGroup: 4,
         loop: true,
         loopFillGroupWithBlank: true,
@@ -54,29 +53,21 @@ function main_visual(){
      var swiper4 = new Swiper('.newBrand__con', {
         speed:1500,
         loop: true,
-        autoplay:true,
+        autoplay: {
+            disableOnInteraction: false,
+        },
       navigation: {
         nextEl: '.newBrand-btn__next',
         prevEl: '.newBrand-btn__prev',
       }
     });
     var swiper5 = new Swiper('.newBrand-subBanner__con', {
-        speed:1500,
         loop: true,
-        direction: 'vertical',
-      navigation: {
-        nextEl: '.newBrand-btn__next',
-        prevEl: '.newBrand-btn__prev',
-      }
+        direction: 'vertical'
     });
     var swiper6 = new Swiper('.newBrand-text__con', {
-        speed:1500,
         loop: true,
-        direction: 'vertical',
-      navigation: {
-        nextEl: '.newBrand-btn__next',
-        prevEl: '.newBrand-btn__prev',
-      }
+        direction: 'vertical'
     });
 
 	swiper4.controller.control = [swiper5,swiper6];

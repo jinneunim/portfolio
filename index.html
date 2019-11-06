@@ -5,9 +5,11 @@
         <link rel="shortcut icon" href="images/does_logo.png">
         <meta charset="utf-8">
         <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=2.0, user-scalable=yes'>
-        <link rel="stylesheet" href="./style.css">
+        <link href="./style.css" rel="stylesheet">
+        <link href="swiper.css" type="text/css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <!--nav-->
@@ -124,79 +126,188 @@
                 </div>
 </div>
             <div class="section" id="section2">
-                <div class="display--table">
-                    <div class="display--table-cell">
+                <!--<div class="display--table">
+                    <div class="display--table-cell">-->
                         <div class="third">
-                            <div class="grid">
-                                <div class="section-title">WORKS</div>
-                                <div class="scrollable-element">
-                                    <div class="scroll">
-                                        <div class="scroll-box">
-                                            <div class="scroll-box__con">
-                                                <h3>Airbnb</h3>
-                                                <p class="summary">에어비앤비 카피 사이트입니다. 반응형 웹을 지원하며 로그인,회원가입의 모달 팝업, datepicker 플러그인 커스텀, 인원수 카운팅과 같은 여러 기능을 구현 해보았습니다.</p>
-                                                <p class="hashtag">
-                                                            #HTML5 #CSS #JQUERY</p>
-                                                <a href="./airbnb/index.html" class="btn">HOMEPAGE</a>
-                                            </div>    
-                                        </div>
-                                        <div class="scroll-box">
-                                            <div class="image" style="background-image: url(images/airbnb-logo.png);">
+<!--                            <div class="grid">-->
+                                <div class="section-title works-title">WORKS</div>
+                                <div class="work-swip swiper-container">
+                                    <ul class="swiper-wrapper">
+                                        <li class="work-swip-list swiper-slide" style="background-color: #FF5A5F;">
+                                            <div class="big-logo airbnb" style="background-image: url(images/airbnb-big-logo@2x.png);"></div>
+                                            <div class="workss grid">
+                                                <div class="display--table">
+                                                    <div class="display--table-cell clearfix">
+                                                        <div class="box-info">
+                                                            <p class="works-subTitle">Airbnb</p>
+                                                            <h2 class="works-mainTitle">에어비앤비</h2>
+                                                            <ul class="works-list-wrap">
+                                                                <li class="works-list">
+                                                                    <span style="color:white;"><i class="fa fa-check"></i></span>
+                                                                    <span class="ss">에어비앤비 Copy Site</span>
+                                                                </li>
+                                                                <li class="works-list">
+                                                                    <span style="color:white;"><i class="fa fa-check"></i></span>
+                                                                    <span class="ss">반응형 웹 지원 (모바일, 태블릿)</span>
+                                                                </li>
+                                                                <li class="works-list">
+                                                                    <span style="color:white;"><i class="fa fa-check"></i></span>
+                                                                    <span class="ss">로그인, 회원가입 모달 팝업</span>
+                                                                </li>
+                                                                <li class="works-list">
+                                                                    <span style="color:white;"><i class="fa fa-check"></i></span>
+                                                                    <span class="ss">datepicker 플러그인 커스텀</span>
+                                                                </li>
+                                                                <li class="works-list">
+                                                                    <span style="color:white;"><i class="fa fa-check"></i></span>
+                                                                    <span class="ss">인원수 카운팅</span>
+                                                                </li>
+                                                            </ul>
+                                                            <a class="go-btn" href="./airbnb/index.html" target="_blank">Go Site
+                                                                <img class="go-arrow" src="images/arrow.png">
+                                                            </a>
+                                                        </div>
+                                                        <div class="box airbnb-main">
+                                                            <img src="images/airbnb__1.PNG" alt="photo">
+                                                            <div class="box2 airbnb-main">
+                                                                <img src="images/airbnb__2.PNG" alt="photo">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="scroll">
-                                        <div class="scroll-box">
-                                            <div class="image" style="background-image: url(images/hiphoper-pc.png);"></div>
-                                        </div>
-                                        <div class="scroll-box">
-                                            <div class="scroll-box__con">
-                                                <h3>HIPHOPER PC</h3>
-                                                <p class="summary">패션종합쇼핑몰 hiphoper 리뉴얼 사이트입니다. swiper와 css를 이용한 슬라이드 이미지등을 구현 해보았습니다.</p>
-                                                <p class="hashtag">
-                                                            #HTML5 #CSS #JQUERY</p>
-                                                <a href="./view_pc/index.html" class="btn">HOMEPAGE</a>
-                                            </div>    
-                                        </div>
-                                    </div>
-                                    <div class="scroll">
-                                        <div class="scroll-box">
-                                            <div class="scroll-box__con">
-                                                <h3>HIPHOPER Mobile</h3>
-                                                <p class="summary">hiphoper pc버전을 반응형이 아닌 redirect로 구현 해보았습니다. 상단메뉴 고정, 스크롤에 반응하는 푸터, swiper, search 및 카테고리 메뉴 slidedown 등의 기능을 구현 해보았습니다.</p>
-                                                <p class="hashtag">
-                                                            #HTML5 #CSS #JQUERY</p>
-                                                <a href="./view_mobile/index.html" class="btn">HOMEPAGE</a>
-                                            </div>    
-                                        </div>
-                                        <div class="scroll-box">
-                                            <div class="image" style="background-image: url(images/hiphoper-mobile.png);"></div>
-                                        </div>
-                                    </div>
-                                    <div class="scroll">
-                                        <div class="scroll-box">
-                                            <div class="image" style="background-image: url(images/leica-logo.png); width: 300px; height: 300px;"></div>
-                                        </div>
-                                        <div class="scroll-box">
-                                            <div class="scroll-box__con">
-                                                <h3>LEICA</h3>
-                                                <p class="summary">leica 리뉴얼 사이트입니다. html, css 위주로 구현을 하였고 약간의 jquery를 사용하였습니다.</p>
-                                                <p class="hashtag">
-                                                            #HTML5 #CSS #JQUERY</p>
-                                                <a href="./leica/index.html" class="btn">HOMEPAGE</a>
-                                            </div>    
-                                        </div>
-                                    </div>
+                                        </li>
+                                        <li class="work-swip-list swiper-slide" style="background-color: #121212;">
+                                            <div class="big-logo hiphoper" style="background-image: url(images/hiphoper-big-logo@2x.png);"></div>
+                                            <div class="workss grid">
+                                                <div class="display--table">
+                                                    <div class="display--table-cell clearfix">
+                                                        <div class="box-info">
+                                                            <p class="works-subTitle">Hiphoper-PC</p>
+                                                            <h2 class="works-mainTitle">힙합퍼</h2>
+                                                            <ul class="works-list-wrap">
+                                                                <li class="works-list">
+                                                                    <span style="color:white;"><i class="fa fa-check"></i></span>
+                                                                    <span class="ss">쇼핑몰 Renewal Site</span>
+                                                                </li>
+                                                                <li class="works-list">
+                                                                    <span style="color:white;"><i class="fa fa-check"></i></span>
+                                                                    <span class="ss">전체 디자인 및 코딩</span>
+                                                                </li>
+                                                                <li class="works-list">
+                                                                    <span style="color:white;"><i class="fa fa-check"></i></span>
+                                                                    <span class="ss">Swiper 플러그인 커스텀</span>
+                                                                </li>
+                                                                <li class="works-list">
+                                                                    <span style="color:white;"><i class="fa fa-check"></i></span>
+                                                                    <span class="ss">Jquery & CSS로 슬라이드 이미지 구현</span>
+                                                                </li>
+                                                            </ul>
+                                                            <a class="go-btn" href="./view_pc/index.html" target="_blank">Go Site
+                                                                <img class="go-arrow" src="images/arrow.png">
+                                                            </a>
+                                                        </div>
+                                                        <div class="box hiphoper-main">
+                                                            <img src="images/hiphoper__1.PNG" alt="photo">
+                                                            <div class="box2 hiphoper-main">
+                                                                <img src="images/hiphoper__2.PNG" alt="photo">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="work-swip-list swiper-slide" style="background-color: #121212;">
+                                            <div class="big-logo hiphoper" style="background-image: url(images/hiphoper-big-logo@2x.png);"></div>
+                                            <div class="workss grid">
+                                                <div class="display--table">
+                                                    <div class="display--table-cell clearfix">
+                                                        <div class="box-info">
+                                                            <p class="works-subTitle">Hiphoper-MOBILE</p>
+                                                            <h2 class="works-mainTitle">힙합퍼</h2>
+                                                            <ul class="works-list-wrap">
+                                                                <li class="works-list">
+                                                                    <span style="color:white;"><i class="fa fa-check"></i></span>
+                                                                    <span class="ss">Redirect로 모바일 구현</span>
+                                                                </li>
+                                                                <li class="works-list">
+                                                                    <span style="color:white;"><i class="fa fa-check"></i></span>
+                                                                    <span class="ss">전체 디자인 및 코딩</span>
+                                                                </li>
+                                                                <li class="works-list">
+                                                                    <span style="color:white;"><i class="fa fa-check"></i></span>
+                                                                    <span class="ss">돋보기, 카테고리 아이콘 클릭 시 이벤트 발생</span>
+                                                                </li>
+                                                                <li class="works-list">
+                                                                    <span style="color:white;"><i class="fa fa-check"></i></span>
+                                                                    <span class="ss">Jquery & CSS로 슬라이드 이미지 구현</span>
+                                                                </li>
+                                                            </ul>
+                                                            <a class="go-btn" href="./view_mobile/index.html" target="_blank">Go Site
+                                                                <img class="go-arrow" src="images/arrow.png">
+                                                            </a>
+                                                        </div>
+                                                        <div class="box hiphoper-m-main">
+                                                            <img src="images/hiphoper-m__1.PNG" alt="photo">
+                                                            <div class="box2 hiphoper-m-main">
+                                                                <img src="images/hiphoper-m__2.PNG" alt="photo">
+                                                            </div>
+                                                            <div class="box3 hiphoper-m-main">
+                                                                <img src="images/hiphoper-m__3.PNG" alt="photo">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="work-swip-list swiper-slide" style="background-color: #ED1C24;">
+                                            <div class="big-logo leica" style="background-image: url(images/leica-logo-vector-01.png);"></div>
+                                            <div class="workss grid">
+                                                <div class="display--table">
+                                                    <div class="display--table-cell clearfix">
+                                                        <div class="box-info">
+                                                            <p class="works-subTitle">Leica</p>
+                                                            <h2 class="works-mainTitle">레이카</h2>
+                                                            <ul class="works-list-wrap">
+                                                                <li class="works-list">
+                                                                    <span style="color:white;"><i class="fa fa-check"></i></span>
+                                                                    <span class="ss">레이카 Renewal Site</span>
+                                                                </li>
+                                                                <li class="works-list">
+                                                                    <span style="color:white;"><i class="fa fa-check"></i></span>
+                                                                    <span class="ss">로그인, 회원가입 모달 팝업</span>
+                                                                </li>
+                                                                <li class="works-list">
+                                                                    <span style="color:white;"><i class="fa fa-check"></i></span>
+                                                                    <span class="ss">datepicker 플러그인 커스텀</span>
+                                                                </li>
+                                                                <li class="works-list">
+                                                                    <span style="color:white;"><i class="fa fa-check"></i></span>
+                                                                    <span class="ss">인원수 카운팅</span>
+                                                                </li>
+                                                            </ul>
+                                                            <a class="go-btn" href="./leica/index.html" target="_blank">Go Site
+                                                                <img class="go-arrow" src="images/arrow.png">
+                                                            </a>
+                                                        </div>
+                                                        <div class="box leica-main">
+                                                            <img src="images/leica__1.PNG" alt="photo">
+                                                            <div class="box2 leica-main">
+                                                                <img src="images/leica__2.PNG" alt="photo">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
-                                 <div class="scrolldown">
-                                    <i class="material-icons">expand_more</i>
-                                    <p>SCROLL DOWN</p>
-                                </div>
-                            </div>
+                            <div class="dots swiper-pagination"></div>
+                            <!--</div>-->
 
                         </div>
-                    </div>
-                </div>
+                    <!--</div>
+                </div>-->
             </div>
             <div class="section" id="section3">
                 <div class="display--table">
@@ -221,6 +332,7 @@
     
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script type="text/javascript" src="fullpage.js"></script>
+        <script src="swiper.min.js"></script>
         <script type="text/javascript" src="main.js"></script>
         <script type="text/javascript">
 	       function initialization(){
@@ -242,5 +354,22 @@
         //fullPage.js initialization
         initialization();
 </script>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                speed:1200,
+                loop:true,
+                autoplay: {
+                    delay: 3500,
+                    disableOnInteraction: false,
+                },
+                keyboard: {
+                    enabled: true,
+                  },
+                pagination: {
+                  el: '.swiper-pagination',
+                  clickable: true,
+                }
+            });
+        </script>
 	</body>
 </html>
