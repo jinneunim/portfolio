@@ -4,6 +4,7 @@ a{text-decoration: none;}
 
 body{
     font-family: 'Roboto', 'Gothic A1', sans-serif;
+    overflow-x: hidden;
 }
 .center{
     width:1280px;
@@ -287,6 +288,7 @@ header:hover .sub__list--link{
     box-sizing: border-box;
     float: left;
     text-align: center;
+    
 }
 .leicaMagazine__content--left h3{
     font-size: 28px;
@@ -314,15 +316,12 @@ header:hover .sub__list--link{
 .leicaMagazine__content--right{
     width:70%;
     box-sizing: border-box;
-    /*border: 3px solid blue;*/
     float: right;
-    padding:20px 0 0 60px;
+    padding:50px 0 0 60px;    
 }
 .content__img--wrap{
     width: 1200px;
     background-color: #ED1C24;
-    /*overflow: hidden;*/
-    /*border: 3px solid green;*/
 }
 .content__img--wrap ul li{
     display: inline-block;

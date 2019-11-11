@@ -305,7 +305,7 @@ $(function(){
 		}
     });
     
-    var win = $(window);
+    /*var win = $(window);
     win.scroll(function() {
 
 		if ($(document).height() - win.height() == win.scrollTop()) {
@@ -336,7 +336,7 @@ $(function(){
         }
             
         });
-
+*/
 
 
 });
