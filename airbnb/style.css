@@ -7,7 +7,7 @@ a{text-decoration: none; color:#484848;}
 body{
     font-size: 14px;
     color: #484848;
-    font-family: 'Circular','-apple-system','BlinkMacSystemFont','Roboto','Helvetica' 'Neue','sans-serif';
+   font-family: 'Noto Sans KR','Roboto','Montserrat', sans-serif;
     box-sizing: border-box;
 }
 .clearfix::after{
@@ -34,7 +34,7 @@ body{
     }
 }
 input{
-    font-family: 'Circular','-apple-system','BlinkMacSystemFont','Roboto','Helvetica Neue',sans-serif;
+    font-family: 'Noto Sans KR','Roboto','Montserrat', sans-serif;
 }
 /*header*/
 /*header{
@@ -226,6 +226,7 @@ header{
     font-size: 30px;
     letter-spacing: -1px;
     word-break: keep-all;
+    font-weight: bold;
 }
 .box{
     margin: 16px 0;
