@@ -161,7 +161,7 @@ $(function(){
     $btnMinus.on('click', function(){
         var $this = $(this);
         var count = $this.parent().find('.valueCount').text();
-        $('#hh').fadeIn().fadeOut();
+        /*$('#hh').fadeIn().fadeOut();*/
         if(count>=1){
             count--;
         }
