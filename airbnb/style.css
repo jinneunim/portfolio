@@ -114,9 +114,6 @@ header{
 .logo-mobile-menu ul{
     padding: 88px 24px 24px;
 }
-.logo-mobile-list{
-    display: list-item;
-}
 .logo-mobile-list a{
     font-size: 16px;
     line-height: 22px;
@@ -175,11 +172,6 @@ header{
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-}
-.background{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
 }
 .bottom-nav{
     position: absolute;
@@ -960,7 +952,6 @@ header{
 .showPW button{
     color: #008489;
     cursor: pointer;
-    user-select: auto;
     float: right;
     background-color: transparent;
     border: 0;
@@ -981,7 +972,6 @@ header{
     line-height: 1.28571em;
     color: #008489;
     cursor: pointer;
-    user-select: auto;
     background-color: transparent;
     border:0;
 }
@@ -1044,16 +1034,11 @@ header{
 
 .sub-page{
     box-sizing: border-box;
-/*
-    border: 5px solid blue;
-*/
     position: relative;
 }
 
 /*contents*/
 .content{
-    /*border: 2px solid blue;*/
-    /*box-sizing: border-box;*/
     margin: 80px 0;
 }
 

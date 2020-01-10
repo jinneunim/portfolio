@@ -272,10 +272,7 @@ $(function(){
         });
         
     }
-    
-    
-    
-    
+
     /*달력*/
     $("#checkIn").datepicker({
         /*showAnim: "slideDown",*/
@@ -304,40 +301,6 @@ $(function(){
             }
 		}
     });
-    
-    /*var win = $(window);
-    win.scroll(function() {
-
-		if ($(document).height() - win.height() == win.scrollTop()) {
-                console.log('0');
-                $.ajax({
-                    url: "add_section.html",
-                    data: "html",
-                    success: function(resultText)
-                    {
-                        $('#loadData').append(resultText);
-                        
-                    },
-					beforeSend:function(){
-						<!--이미지 보여주기 처리-->
-						$('.wrap-loading').addClass('display-none');
-					}
-					,complete:function(){
-						<!--이미지 감추기 처리-->
-						$('.wrap-loading').removeClass('display-none');
-				
-					},
-                    error: function() {
-                        alert("호출에 실패했습니다.");
-                    }
-                });
-        }else{
-            console.log('1');
-        }
-            
-        });
-*/
-
 
 });
 

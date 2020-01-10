@@ -81,25 +81,22 @@ body{
     -webkit-transition: all .3s cubic-bezier(0.6,0,0.5,1);
     transition: all .3s cubic-bezier(0.6,0,0.5,1);
 }
-.nav--list.active a{
+.nav--list.active a{ 
     color: #242424;
 }
 .hide-menu{
     padding: 60px 0;
     margin: auto 0;
-    /*writing-mode: vertical-rl;
-    -webkit-writing-mode: vertical-rl;
-    -ms-writing-mode: vertical-rl;*/
     transform: rotate(270deg);
     -webkit-transition: all .3s cubic-bezier(0.6,0,0.5,1);
     transition: all .3s cubic-bezier(0.6,0,0.5,1);
 }
-.nav--list a::after{   
-    content: attr(data-text);
+.nav--list a::after{    
+    content: attr(id);
     position: absolute;
     right: -10px;
     top: 50%;
-    margin-top: -10px;
+    margin-top: -15px;
     font-size: 96px;
     line-height: 34px;
     font-weight: bold;
@@ -108,16 +105,17 @@ body{
     -webkit-transition: all .4s cubic-bezier(0.6,0,0.5,1);
     transition: all .4s cubic-bezier(0.6,0,0.5,1);
 }
-.nav--list.on a{color:#242424; font-weight: bold;}
+.nav--list.on a{
+    color:#242424; font-weight: bold;
+}
 .nav--list:hover .hide-menu{
     opacity:0;
-    -webkit-transform:translateX(3.125vw) rotate(270deg);}
+    -webkit-transform:translateX(50%) rotate(270deg);
+}
 .nav--list a:hover::after{
     -webkit-transform: translateX(0);
     transform: translateX(0);
 }
-
-
 
 /*first page*/
 .first{
@@ -133,13 +131,10 @@ body{
 }
 .content{
     box-sizing: border-box;
-    
     width: 100%;
     height: 20%;
-    
     position: absolute;
     bottom: 11%;
-    
     display: table;
 }
 .content-box{

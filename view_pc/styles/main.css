@@ -570,7 +570,7 @@ product__wrap li{
     height: 491px;
     position: relative;
     display: inline-block;
-    transition: all .4s ease-in-out;
+    transition: all .4s;
 }
 .style__img{
     box-sizing: border-box;
@@ -581,15 +581,14 @@ product__wrap li{
 }
 .on .item__wrap{
     opacity: 1;
-    left: 270px;
+   left: 270px;
 }
 .on:hover .item__wrap{
     opacity: 1;
-    /*left: 270px;*/
 }
 .item__wrap{ 
     opacity: 0;
-    transition: all .4s ease-in-out;
+    transition: all .4s;
     width: 260px;
     height: 360px;
     background-color: rgba(255,255,255,.8);

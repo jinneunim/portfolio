@@ -4,7 +4,6 @@ $(function(){
         $(this).find('.menu').toggleClass('active');
     });
 
-
     var swiper1 = new Swiper('.banner', {
         centeredSlides: true,
         autoplay: {
@@ -47,7 +46,6 @@ $(function(){
     
     
 main_visual();
-
 // Main visual
 function main_visual(){
      var swiper4 = new Swiper('.newBrand__con', {
@@ -73,14 +71,12 @@ function main_visual(){
 	swiper4.controller.control = [swiper5,swiper6];
 }
 
-
-       
     function textAnimateA() {
         var slideTextA = $('.a');
       slideTextA.each(function (i) {
           setTimeout(function () {
               slideTextA.eq(i).addClass('is-visible');
-          }, 200 * (i + 1));
+          }, i*200);
       });
     }
     function textAnimateB() {
@@ -88,20 +84,21 @@ function main_visual(){
       slideTextB.each(function (i) {
           setTimeout(function () {
               slideTextB.eq(i).addClass('is-visible');
-          }, 200 * (i + 1));
+          }, i*200 );
       });
     }
-     textAnimateA();
+    textAnimateA();
      setTimeout(function(){
          textAnimateB();
      },3000);
     
+    //hear toggle
     var heart = $(".product__heart");
       heart.click(function(){
        $(this).toggleClass("active"); 
   });
     
-        
+//style feed
     $('.style__list').on({
             mouseenter:function(){
                 var brs = $(this).siblings();
@@ -111,18 +108,7 @@ function main_visual(){
                     $(this).addClass("on");
                     brs.removeClass('on')
                 }
-            },
-            mouseleave:function() {
-                var brs = $(this).siblings();
-                if($(this).hasClass('on') == true){
-                    $(this).addClass("on");
-                }else{
-                    $(this).addClass("on");
-                    brs.removeClass('on')
-                    
-                }
             }
-        })
-        $('.style__list').eq(0).mouseenter();
+        });
     
 });

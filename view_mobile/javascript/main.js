@@ -54,8 +54,8 @@ $(function(){
         delta = 15;
     $('.mobile--frame').scroll(function (event) {
         var st = $(this).scrollTop();
-        if (Math.abs(lastScrollTop - st) <= delta) return;
-        if ((st > lastScrollTop) && (lastScrollTop > 0)) {
+       /* if (Math.abs(lastScrollTop - st) <= delta) return;*/
+        if (st > lastScrollTop) {
             $(".bottom__nav").addClass('nav-up');
         } else {
             $(".bottom__nav").removeClass('nav-up');

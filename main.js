@@ -5,7 +5,7 @@ $(function(){
             $(".section").removeClass("navHovered");
         });
     var sectionHeight = $('#section0').innerHeight();
-    var sectionWidth = $('#section0').innerWidth();
-    $('.first').innerHeight(sectionHeight);    
+    
+    /*$('.first').innerHeight(sectionHeight);*/
     $('.work-swip-list.swiper-slide').innerHeight(sectionHeight);    
 });
